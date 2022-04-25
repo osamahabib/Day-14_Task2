@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Form Survey</title>
+    
+</head>
+<body>
+    <a href="https://github.com/rvsp/HTML-CSS/blob/master/Tasks/Survey-Form.png" target="_blank">Task Link</a>
+    <div class="container">
+        <form>
+            <div class="namefield">
+                <p class="heading required">Name</p>
+                <input type="text" name="firstname" class="name_input" required> <br>
+                <small>First</small>
+            </div>
+            <div class="namefield">
+                <input type="text" name="lastname" class="name_input" required> <br>
+                <small>Last</small>
+            </div>
+            <p class="heading required">Email</p>
+            <input type="text" name="email" id="email" required>
+            <p class="heading required">Your Experience</p>
+            <div class="star-icon">
+                <input type="radio" name="rating1" id="rating1" required>
+                <label for="rating1" class="fa fa-star"></label>
+                <input type="radio" name="rating1" id="rating2">
+                <label for="rating2" class="fa fa-star"></label>
+                <input type="radio" name="rating1" id="rating3">
+                <label for="rating3" class="fa fa-star"></label>
+                <input type="radio" name="rating1" id="rating4">
+                <label for="rating4" class="fa fa-star"></label>
+                <input type="radio" name="rating1" id="rating5">
+                <label for="rating5" class="fa fa-star"></label>
+            </div>
+            <p style="font-weight: normal;">Overall how would you rate your experience with us?</p>
+            <p class="required">How satisfied are you with</p>
+            <table class="table table-striped table-borderless">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td class="table_data">Very Unsatisfied</td>
+                        <td class="table_data">Unsatisfied</td>
+                        <td class="table_data">Neutral</td>
+                        <td class="table_data">Satisfied</td>
+                        <td class="table_data">Very Satisfied</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Purchase</td>
+                        <td class="table_data"><input type="radio" name="purchase_poll" required></td>
+                        <td class="table_data"><input type="radio" name="purchase_poll"></td>
+                        <td class="table_data"><input type="radio" name="purchase_poll"></td>
+                        <td class="table_data"><input type="radio" name="purchase_poll"></td>
+                        <td class="table_data"><input type="radio" name="purchase_poll"></td>
+                    </tr>
+                    <tr>
+                        <td>Service</td>
+                        <td class="table_data"><input type="radio" name="service_poll" required></td>
+                        <td class="table_data"><input type="radio" name="service_poll"></td>
+                        <td class="table_data"><input type="radio" name="service_poll"></td>
+                        <td class="table_data"><input type="radio" name="service_poll"></td>
+                        <td class="table_data"><input type="radio" name="service_poll"></td>
+                    </tr>
+                    <tr>
+                        <td>Company Overall</td>
+                        <td class="table_data"><input type="radio" name="overall_poll" required></td>
+                        <td class="table_data"><input type="radio" name="overall_poll"></td>
+                        <td class="table_data"><input type="radio" name="overall_poll"></td>
+                        <td class="table_data"><input type="radio" name="overall_poll"></td>
+                        <td class="table_data"><input type="radio" name="overall_poll"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="required">How likely are you to</p>
+            <table class="table table-striped table-borderless">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td class="table_data">Very Unlikely</td>
+                        <td class="table_data">Unlikely</td>
+                        <td class="table_data">Neutral</td>
+                        <td class="table_data">Likely</td>
+                        <td class="table_data">Very Likely</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Buy from us again</td>
+                        <td class="table_data"><input type="radio" name="buy_again_poll" required></td>
+                        <td class="table_data"><input type="radio" name="buy_again_poll"></td>
+                        <td class="table_data"><input type="radio" name="buy_again_poll"></td>
+                        <td class="table_data"><input type="radio" name="buy_again_poll"></td>
+                        <td class="table_data"><input type="radio" name="buy_again_poll"></td>
+                    </tr>
+                    <tr>
+                        <td>Recommend our products to others</td>
+                        <td class="table_data"><input type="radio" name="recommend_to_others_poll" required></td>
+                        <td class="table_data"><input type="radio" name="recommend_to_others_poll"></td>
+                        <td class="table_data"><input type="radio" name="recommend_to_others_poll"></td>
+                        <td class="table_data"><input type="radio" name="recommend_to_others_poll"></td>
+                        <td class="table_data"><input type="radio" name="recommend_to_others_poll"></td>
+                    </tr>
+                    <tr>
+                        <td>Recommend our company to others</td>
+                        <td class="table_data"><input type="radio" name="recommend_company_poll" required></td>
+                        <td class="table_data"><input type="radio" name="recommend_company_poll"></td>
+                        <td class="table_data"><input type="radio" name="recommend_company_poll"></td>
+                        <td class="table_data"><input type="radio" name="recommend_company_poll"></td>
+                        <td class="table_data"><input type="radio" name="recommend_company_poll"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="heading">Additional comments or suggestions</p>
+            <textarea name="comment_box" rows="4"></textarea>
+            <input type="submit" value="Submit" id="submit_button">
+        </form>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>
